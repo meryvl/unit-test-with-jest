@@ -52,7 +52,6 @@ const {fromDollarToYen} =  require('./app.js')
 describe('app.js', ()=>{
 
  test("1.2 Dollar should be 127.9 yen", function(){
-    const yen = fromDollarToEuro(1.2) *  127.9
     expect(fromDollarToYen(1.2)).toBe(127.9);
 })
 test("This is a function",function(){   
@@ -61,6 +60,25 @@ test("This is a function",function(){
 });
 test("The result of the function is a number", function(){
 const number = !isNaN(fromDollarToYen(1.2));
+expect(number).toBe(true);
+})
+
+});
+
+
+
+const {fromYenToPound} =  require('./app.js')
+describe('app.js', ()=>{
+
+ test("127.9 Yen should be 0.8 Pound", function(){
+    expect(fromYenToPound(127.9)).toBe(0.8);
+})
+test("This is a function",function(){   
+    const result = typeof(fromDollarToYen) ==='function';
+    expect(result ).toBe(true);
+});
+test("The result of the function is a number", function(){
+const number = !isNaN(fromDollarToYen(127.9));
 expect(number).toBe(true);
 })
 

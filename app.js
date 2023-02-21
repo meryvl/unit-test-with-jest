@@ -34,6 +34,6 @@ const fromYenToPound = (yen) =>{
     const euroJPY = yen / ONE_EURO_IS.JPY;
     return euroJPY * ONE_EURO_IS.GBP;
 };
-console.log(fromYenToPound(1));
+console.log(fromYenToPound(127.9));
 
-module.exports = { sum, fromEuroToDollar, fromDollarToEuro, fromDollarToYen ,fromYenToPound  }
+module.exports = { sum, fromEuroToDollar, fromDollarToEuro, fromDollarToYen , fromYenToPound }
